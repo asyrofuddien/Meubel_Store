@@ -79,7 +79,7 @@
                                   <label for="provinces_id">Provinsi</label>
                                   <select name="provinces_id" id="provinces_id" class="form-control" v-if="provinces" v-model="provinces_id">
                                     
-                                    <option v-for="province in provinces" :value="province.id" :key="province.id">@{{ province.name }}</option>
+                                    <option v-for="province in provinces" value="{{ $user->address_two }}" :value="province.id" :key="province.id">@{{ province.name }}</option>
                                     
                                   </select>
                                   <select v-else class="form-control"><option>Loading...</option></select>

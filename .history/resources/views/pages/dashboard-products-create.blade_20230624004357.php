@@ -41,17 +41,15 @@
                         <div class="col-md-3">
                           <div class="form-group">
                             <label for="">Harga</label>
-                            <input type="number" class="form-control" name="price" oninput="calculateIncome(this.value)" />
+                            <input type="number" class="form-control" name="harga" onchange="calculateIncome(this.value),formatCurrency(this)" />
                           </div>
                         </div>
                         <div class="col-md-3">
                           <div class="form-group">
                             <label for="">Pendapatan</label>
-                            <input type="number" class="form-control" name="harga" id="incomeInput" disabled/>
-                            <p class="text-secondary fs-6 font-italic"> <a class="text-danger">* </a>Pendapatan toko akan dikurangi 1%</p>
+                            <input type="number" class="form-control" name="price" id="incomeInput" disabled/>
                           </div>
                         </div>
-                        
                         <div class="col-md-12">
                           <div class="form-group">
                             <label for="">Kategori</label>
@@ -115,5 +113,15 @@
 
     // Memperbarui nilai input pendapatan
     document.getElementById('incomeInput').value = income;
+  }
+  function formatCurrency(input) {
+    // Mengambil nilai angka dari input
+    let value = input.value;
+
+    // Mengubah angka menjadi format mata uang (misalnya: IDR, USD)
+    let formattedValue = Number(value).toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
+
+    // Mengganti nilai input dengan format angka
+    input.value = formattedValue;
   }
 </script>

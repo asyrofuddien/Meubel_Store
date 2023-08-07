@@ -31,9 +31,7 @@ class DashboardSettingController extends Controller
         $regencies = Regency::all();
         $user = Auth::user();
         return view('pages.dashboard-account',[
-            'user' => $user,
-            'prov' => $provinces,
-            'kota' => $regencies
+            'user' => $user
         ]);
     }
 

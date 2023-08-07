@@ -67,10 +67,11 @@
                               disabled
                               
                             />
-                            <p class="text-secondary fs-6 font-italic"> <a class="text-danger">* </a>Pendapatan toko akan dikurangi 1%</p>
                           </div>
                         </div>
-                        
+                        <div class="col_md-6">
+                          
+                        </div>
                         <div class="col-md-12">
                           <div class="form-group">
                             <label for="">Kategori</label>

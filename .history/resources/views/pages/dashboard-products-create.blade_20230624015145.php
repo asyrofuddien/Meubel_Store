@@ -41,14 +41,14 @@
                         <div class="col-md-3">
                           <div class="form-group">
                             <label for="">Harga</label>
-                            <input type="number" class="form-control" name="price" oninput="calculateIncome(this.value)" />
+                            <input type="number" class="form-control" name="harga" oninput="calculateIncome(this.value)" />
                           </div>
                         </div>
                         <div class="col-md-3">
                           <div class="form-group">
                             <label for="">Pendapatan</label>
-                            <input type="number" class="form-control" name="harga" id="incomeInput" disabled/>
-                            <p class="text-secondary fs-6 font-italic"> <a class="text-danger">* </a>Pendapatan toko akan dikurangi 1%</p>
+                            <input type="number" class="form-control" name="price" id="incomeInput" disabled/>
+                            <p class="text-secondary"> <a href=""> *</a>Pendapatan toko akan dikurangi 1%</p>
                           </div>
                         </div>
                         

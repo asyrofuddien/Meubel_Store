@@ -37,7 +37,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-  
+    public function province()
+{
+    return $this->belongsTo(Province::class, 'provinces_id');
+}
 
+public function regency()
+{
+    return $this->belongsTo(Regency::class, 'regencies_id');
+}
 
 }

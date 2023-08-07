@@ -41,17 +41,15 @@
                         <div class="col-md-3">
                           <div class="form-group">
                             <label for="">Harga</label>
-                            <input type="number" class="form-control" name="price" oninput="calculateIncome(this.value)" />
+                            <input type="number" class="form-control" name="harga" oninput="calculateIncome(this.value)" />
                           </div>
                         </div>
                         <div class="col-md-3">
                           <div class="form-group">
                             <label for="">Pendapatan</label>
-                            <input type="number" class="form-control" name="harga" id="incomeInput" disabled/>
-                            <p class="text-secondary fs-6 font-italic"> <a class="text-danger">* </a>Pendapatan toko akan dikurangi 1%</p>
+                            <input type="number" class="form-control" name="price" id="incomeInput" disabled/>
                           </div>
                         </div>
-                        
                         <div class="col-md-12">
                           <div class="form-group">
                             <label for="">Kategori</label>
@@ -113,7 +111,8 @@
     // Menghitung pendapatan dengan mengurangi 10% dari nilai yang dimasukkan
     let income = value - (value * 0.01);
 
+    let formattedIncome = income.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
     // Memperbarui nilai input pendapatan
-    document.getElementById('incomeInput').value = income;
+    document.getElementById('incomeInput').value = formattedIncome;
   }
 </script>

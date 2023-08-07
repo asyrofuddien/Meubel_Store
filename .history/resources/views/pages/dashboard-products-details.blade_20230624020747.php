@@ -51,7 +51,7 @@
                               name="price"
                               class="form-control"
                               value="{{ $product->price }}"
-                              
+                              id="incomeInput"
                               oninput="calculateIncome(this.value)"
                             />
                           </div>
@@ -63,14 +63,12 @@
                               type="number"
                               name="price"
                               class="form-control"
-                              id="incomeInput"
+                              
                               disabled
                               
                             />
-                            <p class="text-secondary fs-6 font-italic"> <a class="text-danger">* </a>Pendapatan toko akan dikurangi 1%</p>
                           </div>
                         </div>
-                        
                         <div class="col-md-12">
                           <div class="form-group">
                             <label for="">Kategori</label>

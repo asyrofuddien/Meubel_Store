@@ -32,26 +32,24 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                           <div class="form-group">
                             <label for="">Nama Produk</label>
                             <input type="text" class="form-control" name="name" />
                           </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                           <div class="form-group">
                             <label for="">Harga</label>
-                            <input type="number" class="form-control" name="price" oninput="calculateIncome(this.value)" />
+                            <input type="number" class="form-control" name="harga" />
                           </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                           <div class="form-group">
-                            <label for="">Pendapatan</label>
-                            <input type="number" class="form-control" name="harga" id="incomeInput" disabled/>
-                            <p class="text-secondary fs-6 font-italic"> <a class="text-danger">* </a>Pendapatan toko akan dikurangi 1%</p>
+                            <label for="">Harga yang akan didapat Penjual</label>
+                            <input type="number" class="form-control" name="price" />
                           </div>
                         </div>
-                        
                         <div class="col-md-12">
                           <div class="form-group">
                             <label for="">Kategori</label>
@@ -108,12 +106,3 @@
     CKEDITOR.replace("editor");
   </script>
 @endpush
-<script>
-  function calculateIncome(value) {
-    // Menghitung pendapatan dengan mengurangi 10% dari nilai yang dimasukkan
-    let income = value - (value * 0.01);
-
-    // Memperbarui nilai input pendapatan
-    document.getElementById('incomeInput').value = income;
-  }
-</script>

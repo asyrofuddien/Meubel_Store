@@ -91,7 +91,7 @@
                                   <select name="regencies_id" id="regencies_id" class="form-control" v-if="regencies" v-model="regencies_id">
                                     <option v-for="regency in regencies" :value="regency.id" :key="regency.id">@{{ regency.name }}</option>
                                   </select>
-                                  <select v-else class="form-control"> <option>Loading...</option></select>
+                                  <select v-else class="form-control"></select>
                                 </div>
                               </div>
                               <div class="col-md-4">

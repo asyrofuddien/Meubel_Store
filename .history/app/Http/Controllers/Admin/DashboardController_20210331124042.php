@@ -18,7 +18,7 @@ class DashboardController extends Controller
     public function index()
     {
         $customer = User::count();
-        $revenue = Transaction::where('transaction_status', 'BERHASIL')->sum('total_price');
+        $revenue = Transaction::where('transaction_status', 'SUCCESS')->sum('total_price');
         $transaction = Transaction::count();
 
         return view('pages.admin.dashboard',[
