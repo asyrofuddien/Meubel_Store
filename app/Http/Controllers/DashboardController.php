@@ -21,8 +21,14 @@ class DashboardController extends Controller
                             ->whereHas('product', function($product){
                                 $product->where('users_id', Auth::user()->id);
                             });
+        $transactions2 = TransactionDetail::with(['transaction.user', 'product.galleries'])
+                            ->whereHas('product', function($product){
+                                $product->where('users_id', Auth::user()->id);
+                            })->whereHas('transaction', function ($transaction) {
+                                $transaction->where('transaction_status', 'BERHASIL');
+                            });
 
-        $reveneu = $transactions->orderby('created_at', 'DESC')->get()->reduce(function ($carry, $item){
+        $reveneu = $transactions2->orderby('created_at', 'DESC')->get()->reduce(function ($carry, $item){
             return $carry + $item->price;
         });
 

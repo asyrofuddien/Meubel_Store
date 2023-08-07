@@ -20,7 +20,7 @@
           <form method="POST" action="{{ route('login') }}" class="mt-3">
             @csrf
             <div class="form-group">
-              <label for="">Email Address</label>
+              <label for="email">Email Address</label>
               <input id="email" type="email" class="form-control w-75 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
               @error('email')

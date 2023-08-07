@@ -27,14 +27,14 @@
                         <div class="carousel-inner mt-5">
                             <div class="carousel-item active">
                             <img
-                                src="/images/banner.jpg"
+                                src="/images/banner3.png"
                                 alt="Carousel Image"
                                 class="d-block w-100"
                             />
                             </div>
                             <div class="carousel-item">
                             <img
-                                src="/images/banner.jpg"
+                                src="/images/banner3.png"
                                 alt="Carousel Image"
                                 class="d-block w-100"
                             />
@@ -100,7 +100,7 @@
                     @php $incrementProduct = 0 @endphp
                     @forelse ($products as $product)
                         <div
-                        class="col-6 col-md-4 col-lg-3"
+                        class="col-6 col-md-4 col-lg-3 hvvv"
                         data-aos="fade-up"
                         data-aos-delay="{{ $incrementProduct+=100 }}"
                         >
