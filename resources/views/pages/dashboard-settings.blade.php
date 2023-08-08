@@ -13,7 +13,7 @@
         <div class="container-fluid">
             <div class="dashboard-heading">
             <h2 class="dashboard-title">Pengaturan Toko</h2>
-            <p class="dashboard-subtitle">Look what you have made today!</p>
+            <p class="dashboard-subtitle">Merubah perngaturan toko</p>
             <div class="dashboard-content">
                 <div class="row">
                 <div class="col-12">
