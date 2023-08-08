@@ -41,7 +41,7 @@
                         <div class="col-md-3">
                           <div class="form-group">
                             <label for="">Harga</label>
-                            <input type="number" class="form-control" name="price" oninput="calculateIncome(this.value)" value="{{ old('price') }}" />
+                            <input type="number" class="form-control" name="price" oninput="calculateIncome(this.value)" />
                           </div>
                         </div>
                         <div class="col-md-3">
@@ -68,8 +68,7 @@
                             <textarea
                               name="description"
                               id="editor"
-                              
-                            >{{ old('description') }}</textarea>
+                            ></textarea>
                           </div>
                         </div>
                         <div class="col-md-12">

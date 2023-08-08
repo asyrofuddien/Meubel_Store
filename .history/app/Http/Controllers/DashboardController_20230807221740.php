@@ -29,8 +29,8 @@ class DashboardController extends Controller
                             });
 
         $reveneu = $transactions2->orderby('created_at', 'DESC')->get()->reduce(function ($carry, $item){
-            $total = $carry + $item->price;
-            return $total - ($total*0.01) ; //pendapatan dikurangi 1 persen
+            $total = $carry + $item->price
+            return ;
         });
 
         $customer = User::count();

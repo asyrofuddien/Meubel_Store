@@ -68,8 +68,8 @@
                             <textarea
                               name="description"
                               id="editor"
-                              
-                            >{{ old('description') }}</textarea>
+                              value="{{ old('description') }}"
+                            ></textarea>
                           </div>
                         </div>
                         <div class="col-md-12">
