@@ -4,7 +4,7 @@
 >
   <div class="container">
     <a href="{{ route('home') }}" class="navbar-brand">
-      <img src="/images/logo.png" alt="" />
+      <img src="/images/logo.svg" alt="" />
     </a>
     <button
       class="navbar-toggler"
@@ -64,7 +64,7 @@
                     class="dropdown-item"
                     >Setting</a
                 >
-                <div class="dropdown-divider"></div>
+                <div class="dropdown-menu"></div>
                     <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
                       class="dropdown-item"
                       >Logout</a>
