@@ -109,7 +109,7 @@
                         alt=""
                         class="rounded-circle mr-2 profil-picture"
                       />
-                      Hi, Jafar
+                      Hi, Admin
                     </a>
                     <div class="dropdown-menu">
                         <a href="" class="dropdown-item">Logout</a>

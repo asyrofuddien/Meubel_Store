@@ -22,7 +22,6 @@ class IndoRegionDistrictSeeder extends Seeder
      */
     public function run()
     {
-        //https://github.com/azishapidin/indoregion
         // Get Data
         $districts = RawDataGetter::getDistricts();
 

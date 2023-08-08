@@ -58,11 +58,9 @@ Route::group(['middleware' => ['auth']], function(){
 });
 
 //setik
- Route::get('/setik', function(){
+ Route::get('/setik', function()){
     return view('setik');
- });
-    
- 
+ }
 
 // ->middleware(['auth', 'admin'])
 Route::prefix('admin')

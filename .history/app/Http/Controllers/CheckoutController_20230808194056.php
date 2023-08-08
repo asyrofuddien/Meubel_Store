@@ -87,7 +87,9 @@ class CheckoutController extends Controller
 
         public function callback(Request $request)
     {
-       
+        $order_id = $request->input('order_id');
+        $status_code = $request->input('status_code');
+        $transaction_status = $request->input('transaction_status');
         // Set konfigurasi midtrans
         Config::$serverKey = config('services.midtrans.serverKey');
         Config::$isProduction = config('services.midtrans.isProduction');
@@ -145,12 +147,7 @@ class CheckoutController extends Controller
             }
             else if ($status == 'settlement')
             {
-                return response()->json([
-                    'meta' => [
-                        'code' => 200,
-                        'message' => 'Midtrans Notification Success'
-                    ]
-                ]);
+                //
             }
             else if ($status == 'success')
             {
@@ -175,7 +172,12 @@ class CheckoutController extends Controller
                 ]);
             }
 
-            
+            return response()->json([
+                'meta' => [
+                    'code' => 200,
+                    'message' => 'Midtrans Notification Success'
+                ]
+            ]);
         }
     }
 }
