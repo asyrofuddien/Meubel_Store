@@ -6,32 +6,27 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-   
+    <style>
+      .hvvv{
+        padding-top: 25px;
+       margin-bottom: 25px;
+       border-radius: 10px
+      }
+      .hvvv:hover{
+        background-color: rgb(206, 206, 206);
+        scale: 1.2;
+      }
+    </style>
     <meta name="description" content="" />
     <meta name="author" content="" />
     <link rel="shortcut icon" href="/images/logoicon.svg" type="image/x-icon">
-    
     <title>@yield('title')</title>
 
     {{-- Style --}}
     @stack('prepend-style')
     @include('includes.style')
     @stack('addon-style')
-    <style>
-      .hvvv{
-        padding-top: 25px;
-       margin-bottom: 25px;
-       border-radius: 10px;
-       transition: 0.2s;
-       
-      }
-      .hvvv:hover{
-        background-color: rgb(206, 206, 206);
-        scale: 1.1;
-        transition: 50ms
-        transition-delay: 0s;
-      }
-    </style>
+    
   </head>
 
   <body>

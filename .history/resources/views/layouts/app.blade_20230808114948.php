@@ -28,7 +28,7 @@
       .hvvv:hover{
         background-color: rgb(206, 206, 206);
         scale: 1.1;
-        transition: 50ms
+        
         transition-delay: 0s;
       }
     </style>

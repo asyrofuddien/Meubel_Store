@@ -21,15 +21,12 @@
       .hvvv{
         padding-top: 25px;
        margin-bottom: 25px;
-       border-radius: 10px;
-       transition: 0.2s;
-       
+       border-radius: 10px
       }
       .hvvv:hover{
         background-color: rgb(206, 206, 206);
         scale: 1.1;
-        transition: 50ms
-        transition-delay: 0s;
+        transition: 0.9s;
       }
     </style>
   </head>
