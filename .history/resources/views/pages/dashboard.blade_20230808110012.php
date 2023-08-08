@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    Store Dashboard
+    Dashboard Toko
 @endsection
 
 @section('content')
@@ -36,6 +36,16 @@
                     <div class="card mb-2">
                     <div class="card-body">
                         <div class="dashboard-card-title">Transaksi</div>
+                        <div class="dashboard-card-subtitle">
+                        {{ number_format($transaction_count) }}
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="dashboard-card-title">Transaksi Berhasil</div>
                         <div class="dashboard-card-subtitle">
                         {{ number_format($transaction_count) }}
                         </div>

@@ -36,8 +36,7 @@ class DashboardController extends Controller
         $customer = User::count();
 
         return view('pages.dashboard', [
-            'transaction_count' => $transactions->count(),
-            'transaction_count_succes' => $transactions2->count(),
+            'transaction_count' => $transactions->where('transaction_status', 'BERHASIL'),
             'transaction_data' => $transactions->get(),
             'revenue' => $reveneu,
             'customer' => $customer

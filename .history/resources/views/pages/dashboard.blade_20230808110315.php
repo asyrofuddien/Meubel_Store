@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('title')
-    Store Dashboard
+    Dashboard Toko
 @endsection
 
 @section('content')
@@ -42,10 +42,20 @@
                     </div>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <div class="card mb-2">
+                    <div class="card-body">
+                        <div class="dashboard-card-title">Transaksi Berhasil</div>
+                        <div class="dashboard-card-subtitle">
+                        {{ number_format($transaction_count_succes) }}
+                        </div>
+                    </div>
+                    </div>
+                </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-12 mt-2">
-                        <h5 class="mb-3">Transaksi terbaru/h5>
+                        <h5 class="mb-3">Transaksi</h5>
                         @foreach ($transaction_data as $transaction)
                             <a
                                 href="{{  route('dashboard-transaction-details', $transaction->id)  }}"
