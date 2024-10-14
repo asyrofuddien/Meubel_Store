@@ -55,5 +55,6 @@ To set up this project on your local machine, follow these steps:
 
    ```bash
   php artisan serve
+  Visit http://localhost:8000 in your browser.
 
-Visit http://localhost:8000 in your browser.
+
